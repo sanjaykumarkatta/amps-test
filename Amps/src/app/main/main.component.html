@@ -1,0 +1,41 @@
+<div class="container"><div class="form-group main">
+<div class="row">
+  <div class="col-md-2" >
+    <label for="env">ENV</label>
+    <select class="form-control" id="env" (change)="onEnvChange($event.target.value)" *ngIf="env">
+      <option *ngFor="let i of env">{{i}}</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="env">Cluster</label>
+    <select class="form-control" id="env"  (change)="onClusterChange($event.target.value)">
+      <option *ngFor="let i of cluster">{{i}}</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+    <label>Server</label>
+    <select class="form-control" id="env">
+      <option>Prod</option>
+      <option>Non-Prod</option>
+      <option>UAT</option>
+      <option>DEV</option>
+    </select>
+  </div>
+  <div class="col-md-4">
+ <label>Topic</label>
+    <select class="form-control" id="env">
+      <option>Prod</option>
+      <option>Non-Prod</option>
+      <option>UAT</option>
+      <option>DEV</option>
+    </select>
+
+  </div>
+</div>
+  <br>
+  <div class="row">
+    <div class="col-md-2"><label>Max</label><input type="text"></div>
+    <div class="col-md-2"><label>Filter</label><input type="text"></div>
+  </div>
+</div>
+</div>
